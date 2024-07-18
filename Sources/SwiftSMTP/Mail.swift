@@ -186,6 +186,7 @@ extension Mail {
 extension DateFormatter {
     static let smtpDateFormatter: DateFormatter = {
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_GB")
         formatter.dateFormat = "EEE, d MMM yyyy HH:mm:ss ZZZ"
         return formatter
     }()
